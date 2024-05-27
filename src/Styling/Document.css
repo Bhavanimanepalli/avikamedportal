@@ -1,0 +1,61 @@
+.DUPage{
+    width: 500px;
+    height: 610px;
+    position: absolute;
+    left: 30%;
+    color: black;
+}
+.text h2{
+    /* text-align: center; */
+    width: 400px;
+    margin-left: 110px;
+    margin-top: 10px;
+    font-weight: bolder;
+
+}
+.inputDiv input{
+     margin:25px 10px;
+     width: 230px;
+     padding: 15px;
+}
+.inputDiv2 input{
+    margin:0px 10px 25px 10px ;
+    width: 230px;
+    padding: 15px;
+}
+.inputDiv3{
+text-indent: 10px;
+}
+.inputDiv3 select{
+    margin:0px 10px 25px 10px ;
+    width: 230px;
+    padding: 15px;
+}
+.inputDiv3 input{
+    margin:0px 10px 25px 10px ;
+    width: 230px;
+    padding: 15px;
+}
+.inputDiv4 input{
+    margin:0px 10px 25px 10px ;
+    width: 480px;
+    padding: 15px;
+}
+.inputDiv5 span{
+   margin-left: 23px;
+   font-weight: bolder;
+}
+.inputDiv5 input{
+    margin:0px 10px 25px 10px ;
+    width: 480px;
+    padding: 15px;
+}
+.submit button{
+    margin:0px 10px 25px 15px ;
+    width: 230px;
+    padding: 15px;
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(80, 103, 194);
+    color: white;
+}
