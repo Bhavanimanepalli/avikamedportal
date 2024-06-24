@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center; */
     width: 450px;
-    height: 435px;
+    height: 450px;
     padding: 25px;
     background-color: #ffffff;
     margin-left: 35%;
@@ -19,7 +19,7 @@ h1{
     text-align: center;
     padding-top: 20px;
 }
-#signin-credentials{
+#credentials{
     font-size: 32px;
     font-weight: lighter;
     margin-left: 12px;
@@ -33,7 +33,7 @@ form input{
     width: 250px;
     padding: 10px;
 }
-#signin-credentials {
+#credentials {
     text-align: center;
     /* margin-top: 20px; */
     font-size: 15px;
@@ -45,19 +45,22 @@ form input{
     margin-top: 0%;
   }
 
+
+
+
   button.guest-button {
-    background-color: blue; /* Green background */
-    border: none; /* Remove border */
-    color: white; /* White text */
-    padding: 15px 32px; /* Padding */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Inline-block element */
-    font-size: 16px; /* Font size */
-    margin: 10px 12px; /* Margin */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 12px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+    background-color: blue; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px;
+    margin: 10px 12px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 button.guest-button:hover {
@@ -66,9 +69,15 @@ button.guest-button:hover {
 }
 
 button.guest-button:active {
-    background-color: #1976d2; /* Even darker green on active */
+    background-color:  #1976d2; /* Even darker green on active */
     transform: scale(0.98); /* Slightly smaller on active */
 }
+
+
+
+
+
+
 
 
 
@@ -85,7 +94,7 @@ button.guest-button:active {
         font-size: 1.5em;
     }
 
-    #signin-credentials {
+    #credentials {
         font-size: 28px;
         margin-left: 0;
     }
@@ -96,6 +105,12 @@ button.guest-button:active {
 
     .signIn button {
         width: 200px;
+    }
+
+    button.guest-button {
+        width: calc(100% - 20px);
+        padding: 10px;
+        font-size: 14px;
     }
 }
 
@@ -112,7 +127,7 @@ button.guest-button:active {
         padding-top: 10px;
     }
 
-    #signin-credentials {
+    #credentials {
         font-size: 24px;
         margin-left: 0;
     }

@@ -218,7 +218,7 @@ function Data() {
         <div className="contChild">
           <h2>All Document Records</h2>
           <div>
-            <span className="text-white"> All documents {displayCount}</span>
+            <span className="text-white"> All documents :{displayCount}</span>
           </div>
         </div>
 
@@ -257,7 +257,7 @@ function Data() {
           <select
             id="date"
             style={{
-              width: "220px",
+              width: "250px",
               marginLeft: "390px",
               marginRight: "10px",
               padding: "5px",

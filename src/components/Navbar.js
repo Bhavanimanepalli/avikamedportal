@@ -1,16 +1,28 @@
-import React from "react";
+import React,{useState} from "react";
 import "../Styling/Navbar.css";
+import { CiUser } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   // const [viewOptions, setViewoptions] = useState(false);
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
 
   // const handleShowOptions = () => {
   //   setViewoptions(!viewOptions);
   // };
-  const handleButton = () => {
-    Navigate("/");
+  // const handleButton = () => {
+  //   Navigate("/");
+  // };
+  const handleLogout = () => {
+   navigate("/");
+  };
+
+
+  
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
   };
   return (
     <>
@@ -20,9 +32,23 @@ function Navbar() {
         </div>
 
 
-        <button className="m-4 btn logoutButton" onClick={handleButton}>
+        {/* <button className="m-4 btn logoutButton" onClick={handleButton}>
           Logout
-        </button>
+        </button> */}
+
+<div id="logout-icon" className="dropdown">
+            <button id="adminlogout" onClick={toggleDropdown}>
+              <CiUser size={30} />
+            </button>
+            {dropdownVisible && (
+              <div className="dropdown-contents">
+                <p>Harish</p>
+                <p onClick={handleLogout}>Logout</p>
+              </div>
+            )}
+          </div>
+
+
       </nav>
     </>
   );

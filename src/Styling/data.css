@@ -13,15 +13,17 @@
 .contChild{
     display: flex;
     justify-content: space-between;
+    margin-top: 5px;
 }
 .contChild div{
-    background-color: rgba(184, 184, 15, 0.827);
+    background-color: rgba(193, 116, 9, 0.827);
     margin-right: 40px;
     height: 42px;
     width: 160px;
-    margin-top: 10px;
-    border-radius: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
     padding: 10px;
+    padding-left: 30px;
 
 }
 
@@ -36,4 +38,101 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .cont h2 {
+        margin-left: 20px;
+        font-size: 1.2em;
+    }
+
+    .contChild {
+        flex-direction: column;
+    }
+
+    .contChild div {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contChild2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .cont h2 {
+        margin-left: 30px;
+        font-size: 1.5em;
+    }
+
+    .contChild {
+        flex-direction: column;
+    }
+
+    .contChild div {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contChild2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .cont h2 {
+        margin-left: 40px;
+        font-size: 2em;
+    }
+
+    .contChild {
+        flex-direction: row;
+    }
+
+    .contChild div {
+        width: 160px;
+        margin-right: 40px;
+    }
+
+    .contChild2 {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .cont h2 {
+        margin-left: 40px;
+        font-size: 2.5em;
+    }
+
+    .contChild {
+        flex-direction: row;
+    }
+
+    .contChild div {
+        width: 200px;
+        margin-right: 40px;
+    }
+
+    .contChild2 {
+        flex-direction: row;
+        align-items: center;
+    }
 }

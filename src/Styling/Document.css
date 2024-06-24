@@ -59,3 +59,136 @@ text-indent: 10px;
     background-color: rgb(80, 103, 194);
     color: white;
 }
+
+
+
+
+
+@media (max-width: 600px) {
+    .DUPage {
+        width: 100%;
+        left: 0;
+        padding: 10px;
+        height: auto;
+    }
+
+    .text h2 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .inputDiv input,
+    .inputDiv2 input,
+    .inputDiv3 select,
+    .inputDiv3 input,
+    .inputDiv4 input,
+    .inputDiv5 input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .submit button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .DUPage {
+        width: 90%;
+        left: 5%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .text h2 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.75em;
+    }
+
+    .inputDiv input,
+    .inputDiv2 input,
+    .inputDiv3 select,
+    .inputDiv3 input,
+    .inputDiv4 input,
+    .inputDiv5 input {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .submit button {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .DUPage {
+        width: 500px;
+        height: 610px;
+        left: 30%;
+    }
+
+    .text h2 {
+        width: 400px;
+        margin-left: 110px;
+        margin-top: 10px;
+    }
+
+    .inputDiv input,
+    .inputDiv2 input,
+    .inputDiv3 select,
+    .inputDiv3 input,
+    .inputDiv4 input,
+    .inputDiv5 input {
+        width: 230px;
+    }
+
+    .inputDiv4 input,
+    .inputDiv5 input {
+        width: 480px;
+    }
+
+    .submit button {
+        width: 100px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .DUPage {
+        width: 600px;
+        height: 710px;
+        left: 25%;
+    }
+
+    .text h2 {
+        width: 500px;
+        margin-left: 150px;
+        font-size: 2em;
+    }
+
+    .inputDiv input,
+    .inputDiv2 input,
+    .inputDiv3 select,
+    .inputDiv3 input,
+    .inputDiv4 input,
+    .inputDiv5 input {
+        width: 250px;
+    }
+
+    .inputDiv4 input,
+    .inputDiv5 input {
+        width: 520px;
+    }
+
+    .submit button {
+        width: 120px;
+    }
+}

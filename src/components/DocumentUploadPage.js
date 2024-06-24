@@ -157,6 +157,7 @@ function DocumentUploadPage() {
     } catch (err) {
       console.log(err);
       alert(err.response.data.errors[0].msg);
+      FormData('')
     }
   };
   return (
